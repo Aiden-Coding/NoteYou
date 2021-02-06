@@ -1,0 +1,24 @@
+@import '../../global/global.module.less';
+.basicSide{
+  height: 100vh;
+  width: 1vw;
+  background-color: @titleBar-color;
+  -webkit-app-region: drag;
+}
+.titlbar{
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  height: @titleBar-height;
+  width: 100vw;
+  margin: 1px;
+  background-color: @titleBar-color;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+}
+.customLayout{
+  :global {
+    .ant-layout{
+      background:@main-bg-color;
+    }
+  }
+
+}
